@@ -1,0 +1,386 @@
+body {
+    text-align: center;
+    color: #6a6a6a;
+    padding: 0px;
+    margin: 0px;
+    background-color: #f4f4f4;
+}
+
+.porVez .pergunta {
+    display: none;
+    border: 1px solid #ccc;
+    background: #f4f4f4;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.porVez .pergunta:first-child {
+    display: block;
+}
+
+.porVez .pergunta div {
+    line-height: 28px;
+    margin: 5px 0;
+    padding: 5px 0;
+}
+
+.resposta:hover {
+    cursor: pointer;
+    color: orangered;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.active {
+    font-weight: bold;
+    cursor: default;
+    border-radius: 20px;
+    background-color: #ececec;
+}
+
+.respEscrita span {
+    position: absolute;
+}
+
+label {
+    line-height: 30px;
+    margin: 5px 0;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.pergunta label:hover {
+    cursor: pointer;
+    color: orange;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.vermelho {
+    color: red;
+}
+
+.verde {
+    color: green;
+}
+
+.verde input[type="text"] {
+    color: green;
+    border-color: green;
+}
+
+.vermelho input[type="text"] {
+    color: red;
+    border-color: red;
+}
+
+.click {
+    font-weight: bold;
+    cursor: default;
+    border-radius: 20px;
+    background-color: #e5e5e5;
+}
+
+.acertou::after, .acertou.click::after {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    background-image: url('icon-certo.png');
+    background-size: cover;
+    width: 25px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.active.errado::after, .errado.click::after {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    background-image: url('icon-errado.png');
+    background-size: cover;
+    width: 25px;
+    height: 22px;
+    margin-left: 5px;
+}
+
+input[type="text"] {
+    padding: .75rem;
+    margin: 5px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+*:disabled, *:disabled:hover {
+    color: inherit!important;
+    background-color: #e9ecef!important;
+    cursor: default;
+    opacity: .5;
+}
+
+#quizForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#quizForm div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certoerrado {
+    display: none;
+    width: 25px;
+    position: absolute;
+    z-index: 99;
+    padding: 7px;
+    filter: grayscale(0%);
+}
+
+.tipo {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    color: #6c757d;
+    border: 1px solid #6c757d;
+    border-radius: .25rem;
+    padding: .375rem .75rem;
+    margin: 0 10px;
+    line-height: 1.5;
+    vertical-align: middle;
+    background-color: transparent;
+}
+
+.tipo:hover {
+    color: #fff;
+    background-color: #6c757d;
+}
+
+.btn-botao {
+    font-size: 1rem;
+    text-decoration: none;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-botao:hover {
+    background-color: #0257b3;
+}
+
+.btn-botao[value="Ver resultados"], .btn-botao[value="Reiniciar"] {
+    background-color: #28a745;
+}
+
+.btn-botao.verde {
+    background-color: green;
+}
+
+.btn-botao.verde:hover {
+    background-color: #05701e;
+}
+
+.btn-botao.laranjado {
+    background-color: orangered;
+}
+
+.btn-botao.laranjado:hover {
+    background-color: #b83100;
+}
+
+#message {
+    font-weight: bold;
+    color: green;
+}
+
+img {
+    max-width: 80px;
+    height: auto;
+}
+
+.feedback {
+    display: none;
+}
+
+
+.anime-entrarBaixo {
+    animation: 1s ease 0s 1 anime-entrarBaixo;
+}
+
+@keyframes anime-entrarBaixo {
+    0% {
+        transform: translateY(150%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.anime-entrarCima {
+    animation: 1s ease 0s 1 anime-entrarCima;
+}
+
+@keyframes anime-entrarCima {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.anime-entrarDireita {
+    animation: 1s ease 0s 1 anime-entrarDireita;
+}
+
+@keyframes anime-entrarDireita {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.anime-entrarEsquerda {
+    animation: 1s ease 0s 1 anime-entrarEsquerda;
+}
+
+@keyframes anime-entrarEsquerda {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.anime-sairCima {
+    animation: 1s ease 0s 1 anime-sairCima;
+}
+
+@keyframes anime-sairCima {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-150%);
+    }
+}
+
+.anime-sairBaixo {
+    animation: 1s ease 0s 1 anime-sairBaixo;
+}
+
+@keyframes anime-sairBaixo {
+    0% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(150%);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.anime-sairEsquerda {
+    animation: 1s ease 0s 1 anime-sairEsquerda;
+}
+
+@keyframes anime-sairEsquerda {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.anime-sairDireita {
+    animation: 1s ease 0s 1 anime-sairDireita;
+}
+
+@keyframes anime-sairDireita {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.anime-aparecer {
+    animation: 1s ease 0s 1 anime-aparecer;
+}
+
+@keyframes anime-aparecer {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.anime-desaparecer {
+    animation: 2s ease 0s 1 anime-desaparecer;
+}
+
+@keyframes anime-desaparecer {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.anime-aumentar {
+    animation: 1s ease 0s 1 anime-aumentar;
+}
+
+@keyframes anime-aumentar {
+    0% {
+        font-size: 6px;
+    }
+    75% {
+        font-size: 26px;
+    }
+    100% {
+        font-size: 16px;
+    }
+}
+
+.anime-diminuir {
+    animation: 1s ease 0s 1 anime-diminuir;
+}
+
+@keyframes anime-diminuir {
+    0% {
+        font-size: 76px;
+    }
+    50% {
+        font-size: 96px;
+    }
+    100% {
+        font-size: 6px;
+    }
+}

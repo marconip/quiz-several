@@ -1,0 +1,46 @@
+﻿<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="files/style.css">
+    <title>JS - Quiz</title>
+</head>
+
+<body>
+
+    <section>
+        <h1>Todas pergunta juntas</h1>
+        <h4>Usando Loop e Arrays</h4>
+
+        <form name="quizForm" method="post" class="pergunta">
+            <div>
+                <b class="numeroPergunta">1. Qual nome do nosso planeta?</b><br />
+                <label><input type="radio" name="q1" value="11"> Marte</label><br />
+                <label><input type="radio" name="q1" value="12"> Saturno</label><br />
+                <label><input type="radio" name="q1" value="13"> Terra</label><br /><br />
+            </div>
+            <div>
+                <b class="numeroPergunta">2. Quais são as 3 cores primárias?</b><br />
+                <label><input type="radio" name="q2" value="21"> Preto e cinza</label><br />
+                <label><input type="radio" name="q2" value="22"> Vermelho, verde e azul</label><br />
+                <label><input type="radio" name="q2" value="23"> Só amarelo</label><br /><br />
+            </div>
+            <div>
+                <b class="numeroPergunta"> 3. Quantas cores te o arco-iris?</b><br />
+                <label><input type="radio" name="q3" value="31"> Duas</label><br />
+                <label><input type="radio" name="q3" value="32"> Uma</label><br />
+                <label><input type="radio" name="q3" value="33"> Sete</label><br /><br />
+            </div>
+            <input class="btn btn-botao" type="button" value="Ver respostas" onclick="submitAnswer()">
+        </form>
+        <br />
+        <b id="message"> </b>
+    </section>
+
+    <script src="files/todas-pergunta-juntas.js"> </script>
+</body>
+
+</html>

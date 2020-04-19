@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="files/style.css">
+    <title>JS - Quiz</title>
+</head>
+
+<body>
+    <section class="respEscrita anime-aparecer">
+        <h1>Respostas com escrita</h1>
+        <h3>Pega todos data atributo e responde ao que segue igual digitado </h3>
+
+        <p>As respostas certas são os label de inputs.</p>
+        <form>
+            <label>red:
+                <input type="text" name="red" autocomplete="off" class="write" data-resposta="red">
+                <span></span>
+            </label>
+            <br />
+            <label>pink:
+                <input type="text" name="pink" autocomplete="off" class="write" data-resposta="pink">
+                <span></span>
+            </label>
+            <br />
+            <label>blue: <input type="text" name="blue" autocomplete="off" class="write" data-resposta="blue">
+                <span></span>
+            </label>
+            <br />
+            <label>gray: <input type="text" name="gray" autocomplete="off" class="write" data-resposta="gray">
+                <span></span>
+            </label>
+            <br /><br />
+            <input type="button" name="submit" value="Resultado" class="btn btn-botao" onclick="funcResposta()">
+            <br /><br />
+            <b id="contagem"></b>
+        </form>
+    </section>
+
+
+    <script src="files/respostas-escritas.js"> </script>
+</body>
+
+</html>

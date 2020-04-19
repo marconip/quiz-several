@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="files/style.css">
+    <title>JS - Quiz</title>
+</head>
+
+<body>
+    <section class="porVez">
+        <h1>Usando uma pergunta por vez</h1>
+        <p id="quantidades"> </p>
+        <b id="total"></b>
+
+        <form name="quizFormX" method="post" class="anime-aparecer">
+            <div class="pergunta">
+                <b>1. Qual nome do nosso planeta?</b><br />
+                <div data-value="a" data-resposta="1" class="resposta"> Marte</div>
+                <div data-value="b" data-resposta="1" class="resposta"> Saturno</div>
+                <div data-value="c" data-resposta="1" class="resposta"> Terra</div>
+            </div>
+            <div class="pergunta">
+                <b>2. Quais são as três cores primárias?</b><br />
+                <div data-value="a" data-resposta="2" class="resposta"> Preto e cinza</div>
+                <div data-value="b" data-resposta="2" class="resposta"> Vermelho, verde e azul</div>
+                <div data-value="c" data-resposta="2" class="resposta"> Só amarelo</div>
+            </div>
+            <div class="pergunta">
+                <b>3. Quantas cores te o arco-iris?</b><br />
+                <div data-value="a" data-resposta="3" class="resposta"> Duas</div>
+                <div data-value="b" data-resposta="3" class="resposta"> Uma</div>
+                <div data-value="c" data-resposta="3" class="resposta"> Sete</div>
+            </div>
+            <input class="btn-botao" type="button" value="Próxima pergunta" onclick="funcBotao()">
+        </form>
+
+
+
+        <script src="files/uma-pergunta-por-vez.js"> </script>
+    </section>
+
+</body>
+
+</html>

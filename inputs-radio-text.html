@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="files/style.css">
+    <title>JS - Quiz</title>
+</head>
+
+<body>
+    <section>
+        <h1>Com inputs de radio e texto</h1>
+        <h3>Usando Loops, Array e inserindo mensagem</h3>
+
+        <form id="quiz" name="quiz" class="pergunta">
+            <div>
+                <b class="asPerguntas">1 - Qual a sigla do nome Brasil</b><br />
+                <input type="text" name="question1" autocomplete="off">
+            </div><br />
+            <div>
+                <b class="asPerguntas">2 - Qual a sigla do nome Amazonas</b><br />
+                <input type="text" name="question2" autocomplete="off">
+            </div><br />
+            <div>
+                <b class="asPerguntas">3 - Qual o maior estado do Brasil?</b><br />
+                <label><input type="radio" name="question3" value="Amazonas"> Amazonas</label><br />
+                <label><input type="radio" name="question3" value="Curitiba"> Curitiba</label><br />
+                <label><input type="radio" name="question3" value="Acre"> Acre</label>
+            </div><br />
+            <div>
+                <b class="asPerguntas">4 - Qual a capital de São Paulo?</b><br />
+                <label><input type="radio" name="question4" value="São Paulo"> São Paulo</label><br />
+                <label><input type="radio" name="question4" value="Rio de Janeiro"> Rio de Janeiro</label><br />
+                <label><input type="radio" name="question4" value="Acre"> Acre</label>
+            </div><br /><br />
+            <input class="btn btn-botao" type="button" value="Checar respostas" onclick="check()">
+        </form>
+
+        <div>
+            <p id="message"></p>
+        </div>
+    </section>
+    
+
+    <script src="files/inputs-radio-text.js"> </script>
+</body>
+
+</html>
